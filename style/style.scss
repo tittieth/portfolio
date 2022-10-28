@@ -33,7 +33,7 @@ main {
   }
   
   /*styling för tablet*/
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 768px) {
     @import "layout/tablet";
   }
 

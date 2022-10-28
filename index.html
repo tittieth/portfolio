@@ -11,10 +11,6 @@
     <main>
         <section class="pink">
             <header class="orangea">
-                <h1>
-                    <span><span>Hi!, I'm Tittie!</span>
-                    I'm a <span>Front End Developer</span>
-                </h1>
                 <nav>
                     <ul>
                         <li>Home</li>
@@ -24,6 +20,12 @@
                         <li>Contact</li>
                     </ul>
                 </nav>
+                <h1>
+                    <p>
+                    Hi! I'm Tittie!<br>
+                    I'm a Front End Developer <br>and a </p>
+                    <!--Gör en textanimation-->
+                </h1>
             </header>
         </section>
 
@@ -69,15 +71,22 @@
 
         <section class="lightblue">
             <header><h2>Contact</h2></header>
-            <form id="msform">
-                <fieldset>
-                  <h2 class="fs-title">Get in touch</h2>
-                  <input type="text" name="name" placeholder="Name" />
-                  <input type="email" name="pass" placeholder="Email" />
-                  <input type="password" name="cpass" placeholder="Message" />
-                  <input type="button" name="send" class="send action-button" value="Send" />
-                </fieldset>  
-            </form>
+            <div class="form-container">
+                <form action="action_page.php">
+              
+                  <label for="fname">First Name:</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name:</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="subject">Subject:</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+            </div>
         </section>
 
         <footer> 
