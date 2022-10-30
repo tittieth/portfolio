@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/6e63925041.js" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="/style/style.css" type="text/css">
     <title>Tittie Thomasson - Front end developer</title>
 </head>
+
 <body>
     <main>
         <section class="pink">
             <header class="orange">
-                <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li>About me</li>
-                        <li>Skills</li>
-                        <li>Projects</li>
-                        <li>Contact</li>
-                    </ul>
-                </nav>
+                <input type="checkbox">
+                <div class="hamburger-menu">
+                    <button class="menu-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About me</a></li>
+                            <li><a href="#">Skills</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="box">
                     <h1>
-                        Hi! I'm Tittie!<br>
+                        Hi, I'm Tittie!<br>
                         I'm a Front End Developer <br>and a
                         <div class="word">
                             <span>mum</span>
@@ -33,78 +44,101 @@
                             <span>nature lover</span>
                         </div>
                     </h1>
-                </div> 
+                </div>
             </header>
         </section>
 
         <aside>
             <!--Lägga in länkar till sociala medier som följer med när man scrollar -->
             <ul>
-                <li><!--Mejl--></li>
-                <li><!--Github--></li>
-                <li><!--Linkedin--></li>
-                <li><!--Facebook--></li>
-                <li><!--Instagram--></li>
+                <li>
+                    <!--Mejl-->
+                </li>
+                <li>
+                    <!--github-->
+                </li>
+                <li>
+                    <!--Linkedin-->
+                </li>
+                <li>
+                    <!--Facebook-->
+                </li>
+                <li>
+                    <!--Instagram-->
+                </li>
             </ul>
         </aside>
 
         <section class="blue">
-            <header> <h2>About me</h2></header>
+            <header>
+                <h2>About me</h2>
+            </header>
             <div class="container-two">
-                <div class="green">Bild på mig <!--Lägga in bild --></div>
+                <div class="green">Bild på mig
+                    <!--Lägga in bild -->
+                </div>
                 <div class="black"> text </div>
             </div>
         </section>
 
         <section class="brown">
-            <header> <h2>Skills</h2></header>
+            <header>
+                <h2>Skills</h2>
+            </header>
             <!--Infoga symboler och använda flex-->
         </section>
 
         <section class="purple">
-            <header><h2>Projects</h2></header>
+            <header>
+                <h2>Projects</h2>
+            </header>
             <div class="grid-container">
-                <div class="box-one"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Quis praesentium, quam quas delectus tempora officia 
-                    obcaecati quidem mollitia. Ad error asperiores facilis 
-                    porro possimus nam eveniet eum modi nemo temporibus.</p></div>
+                <div class="box-one">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quis praesentium, quam quas delectus tempora officia
+                        obcaecati quidem mollitia. Ad error asperiores facilis
+                        porro possimus nam eveniet eum modi nemo temporibus.</p>
+                </div>
                 <div class="box-two"></div>
                 <div class="box-three"></div>
                 <div class="box-four"></div>
                 <div class="box-five"></div>
                 <div class="box-six"></div>
-              </div>
+            </div>
         </section>
 
 
         <section class="lightblue">
-            <header><h2>Contact</h2></header>
+            <header>
+                <h2>Contact</h2>
+            </header>
             <div class="form-container">
                 <form action="action_page.php">
-              
-                  <label for="fname">First Name:</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
-              
-                  <label for="lname">Last Name:</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" placeholder="Your email..">
-              
-                  <label for="subject">Subject:</label>
-                  <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
-              
-                  <input type="submit" value="Submit">
-              
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email..">
+
+                    <label for="subject">Subject:</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+
+                    <input type="submit" value="Submit">
+
                 </form>
             </div>
         </section>
 
-        <footer> 
+        <footer>
             <!--Lägga in kontaktinfo-->
-            <p>Made with <!--Lägga in en hjärtsymbol--> by Tittie Thomasson @2022</p>
+            <p>Made with <i class="fa-solid fa-heart"></i> by Tittie Thomasson @2022</p>
         </footer>
 
-    </main>   
+    </main>
 </body>
+
 </html>

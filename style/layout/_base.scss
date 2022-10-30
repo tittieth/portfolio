@@ -1,18 +1,113 @@
 .pink {
     outline: 3px solid pink;
-    min-height: 70vh;
+    height: 50vh;
     width: 100vw;
     margin-top: 20px;
     position: relative;
 }
-
-nav {
-    border: 3px solid black;
-    margin: 10px;
-    min-height: 10vh;
-    width: 100vw;
-
+ /*-------- Hamburgermeny start ---------*/
+.menu-button {
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border: 0;
+    position: fixed;
+    right: 40px;
+    top: 20px;
+    z-index: 3;
 }
+      
+.menu-button span {
+    display: block;
+    width: 32px;
+    height: 4px;
+    background-color: black;
+    border-radius: 6px;
+    margin-bottom: 4px;
+    position: relative;
+    left: 0;
+    transition: left 0.3s ease-in-out;
+    margin-left: 6px;
+}
+      
+.orange input {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 4;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.orange input:checked + .hamburger-menu span {
+    position: absolute;
+} 
+
+.orange input:checked + .hamburger-menu span:nth-child(2) {
+    opacity: 0;
+}
+
+.orange input:checked + .hamburger-menu span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.orange input:checked + .hamburger-menu span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+      
+.menu-button span:nth-child(2) {
+    margin-left: 0;
+    transition: all 0.4s ease-in-out;
+}
+      
+.orange input:hover + .hamburger-menu .menu-button span:nth-child(2) {
+    left: 6px;
+}
+      
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255, 0.8);
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    visibility: hidden;
+    z-index: 2;
+}
+      
+input:checked + .hamburger-menu nav {
+    visibility: visible;
+    opacity: 1;
+}
+      
+.hamburger-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: black;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-shadow: 3px 3px rgb(191, 191, 191, 0.5);
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+  
+.hamburger-menu ul a:link {
+    text-decoration: none;
+}
+  
+.hamburger-menu ul a:visited {
+    color: black;
+}  
+
+/* -----Hamburgermenu end------------ */
 
 h2 {
     position: relative;
@@ -20,7 +115,7 @@ h2 {
     font-size: 2rem;
 }
 
-/* Skapat en animation i huvudrubriken */
+/* To change the word in the headline */
 .box {
     position: absolute;
     text-align: left;
@@ -33,7 +128,7 @@ h2 {
 
 .word {
     display: inline-block;
-    color: seagreen;
+    color: goldenrod;
 }
 
 .word span {
@@ -91,13 +186,13 @@ h2 {
     animation-delay: 8s;
 }
 
-/* Animation slut */
+/* Animation end */
 
 
 
 .orange {
     outline: 3px solid orange;
-    min-height: 80vh;
+    min-height: 40vh;
     width: 100vw;
 }
 
@@ -201,6 +296,8 @@ footer {
     outline: 3px solid lightseagreen;
     min-height: 20vh;
     width: 100vw;
+    font-size: 1.3rem;
+    padding-top: 50px;
 }
 
 
@@ -252,4 +349,9 @@ input[type=submit]:hover {
 
 #subject {
     height: 200px;
+}
+
+.fa-solid {
+    color: seagreen;
+    
 }
