@@ -5,7 +5,7 @@
     margin-top: 20px;
 }
 
-nav{
+nav {
     border: 3px solid black;
     margin: 0 15px 0 15px;
     min-height: 10vh;
@@ -18,6 +18,7 @@ h2 {
     top: 15px;
     font-size: 2rem;
 }
+
 .box {
     position: relative;
     left: 50px;
@@ -70,10 +71,10 @@ h2 {
     outline: 3px solid pink;
     min-height: 120vh;
     width: 80vw;
-    
+
 }
 
-.grid-container {  
+.grid-container {
     display: grid;
     min-height: 110vh;
     grid-template-columns: 1fr 1fr;
@@ -83,40 +84,46 @@ h2 {
     justify-content: space-around;
     border: 3px solid black;
     margin-top: 30px;
-   
-  }
-  
-.Box-1 { grid-area: 1 / 1 / 2 / 2; 
-    background-color: pink;
-   
+
 }
-  
-.Box-2 { grid-area: 1 / 2 / 2 / 3; 
+
+.box-1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: pink;
+
+}
+
+.box-2 {
+    grid-area: 1 / 2 / 2 / 3;
     background-color: lightcoral;
-    }
-  
-.Box-3 { grid-area: 2 / 1 / 3/ 2; 
+}
+
+.box-3 {
+    grid-area: 2 / 1 / 3/ 2;
     background-color: pink;
-   }
+}
 
 
-.Box-4 { grid-area: 2 / 2 / 3 / 3; 
+.box-4 {
+    grid-area: 2 / 2 / 3 / 3;
     background-color: lightseagreen;
-  
+
 }
-  
-  .Box-5 { grid-area: 3/ 1 / 4 / 2;
+
+.box-5 {
+    grid-area: 3/ 1 / 4 / 2;
     background-color: aqua;
-   
+
 }
-    
-  .Box-6 { grid-area: 3 / 2 / 4 / 3; 
+
+.box-6 {
+    grid-area: 3 / 2 / 4 / 3;
     background-color: goldenrod;
 
 
 }
-  
-  
+
+
 
 .lightblue {
     outline: 3px solid lightblue;
@@ -126,49 +133,58 @@ h2 {
 
 footer {
     outline: 3px solid lightseagreen;
-    min-height: 10vh;
+    min-height: 20vh;
     width: 80vw;
     margin-bottom: 20px;
 }
 
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ffe8da; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
+input[type=text], input[type=email],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ffe8da;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
     background-color: #ffe8da;
     color: black;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
     background-color: lightseagreen;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .form-container {
+}
+
+/* Add a background color and some padding around the form */
+.form-container {
     width: 90%;
     margin: 80px auto;
     text-align: left;
     border-radius: 5px;
-    background-color: #cdac79;;
+    background-color: #cdac79;
+    ;
     padding: 50px;
-  }
+}
 
-#subject  {
+#subject {
     height: 200px;
 }
-  

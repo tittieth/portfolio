@@ -2,42 +2,42 @@
 @import "vendor/normalize";
 
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
-body{
-    overflow-x: hidden;
-    background:  #ffe8da;
+body {
+  overflow-x: hidden;
+  background: #ffe8da;
 }
 
 main {
-    width: 100vw;
-    min-height: 100vh;
-    margin: 10px;
-    outline: 3px solid lightgreen;
-    overflow-x: hidden;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  max-width: 100vw;
+  min-height: 100vh;
+  margin: 10px;
+  outline: 3px solid lightgreen;
+  overflow-x: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* styling för mobil */
 @media screen and (min-width: 325px) {
-    @import "layout/base";
-  }
-  
-  /*styling för tablet*/
-  @media screen and (min-width: 768px) {
-    @import "layout/tablet";
-  }
+  @import "layout/base";
+}
 
-   /*styling för desktop*/
-   @media screen and (min-width: 1024px) {
-    @import "layout/desktop";
-  }
+/*styling för tablet*/
+@media screen and (min-width: 768px) {
+  @import "layout/tablet";
+}
+
+/*styling för desktop*/
+@media screen and (min-width: 1024px) {
+  @import "layout/desktop";
+}
