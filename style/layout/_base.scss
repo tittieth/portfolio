@@ -1,15 +1,8 @@
-.pink {
-    outline: 3px solid pink;
-    height: 65vh;
-    width: 100vw;
-    text-align: left;
-    position: relative;
-}
  /*-------- Hamburgermeny start--------------
  Gjord med hjälp av video av Kevin Powell  ---------*/
  
  .nav-header {
-    background-color: rgb(206, 156, 157,0.8);
+    background-color: rgba(227,209, 191);
     text-align: center;
     position: fixed;
     z-index: 999;
@@ -37,7 +30,7 @@
     background: black;
     height: 3px;
     width: 2em;
-    border-radius: 2px;
+    border-radius: 3px;
     position: relative;
  }
 
@@ -58,9 +51,10 @@
  nav {
     position: absolute;
     text-align: left;
+    font-size: 2rem;
     top: 100%;
     left: 0;
-    background: rgb(206, 156, 157,0.8);
+    background: rgba(227,209, 191);
     width: 100%;
     transform: scale(1, 0);
     transform-origin: top;
@@ -79,7 +73,7 @@
  }
 
  nav a {
-    color: darkcyan;
+    color: rgba(31, 77, 87);
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 600;
@@ -89,7 +83,7 @@
  }
 
  nav a:hover {
-    color: black;
+    color: rgba(248, 242, 235);
  }
 
  .nav-toggle:checked ~ nav {
@@ -101,29 +95,41 @@
     transition: opacity 250ms ease-in-out 250ms;
  }
 
+
 /* -----Hamburgarmeny slut------------ */
+
+.pink {
+    outline: 3px solid pink;
+    height: 55vh;
+    width: 100vw;
+    text-align: left;
+    position: relative;
+}
 
 h2 {
     position: relative;
-    top: 15px;
+    margin: 20px 0;
     font-size: 2rem;
 }
 
 /* Ändrar ord i huvudrubriken */
 .box {
     position: absolute;
-    left: 40px;
+    background-color: rgb(31, 77, 87);
+    color: rgb(227, 209, 191);
+    box-shadow: 5px 10px rgb(140, 112, 64);
+    left: 15px;
     text-align: left;
-    top:120px;
-    padding: 0 40px;
-    font-size: 1rem;
-    width: 80vw;
+    top:140px;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    width: 90vw;
     transform: translateY(20%)
 }
 
 .word {
     display: inline-block;
-    color: goldenrod;
+    color: rgba(140, 112, 64);
 }
 
 .word span {
@@ -324,8 +330,8 @@ textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #ffe8da;
-    color: black;
+    background-color: rgb(140, 112, 64);
+    color: rgb(227, 209, 191);
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -334,17 +340,18 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: lightseagreen;
+    background-color: rgba(227, 209, 191);
+    color: black;
 }
 
 /* Add a background color and some padding around the form */
 .form-container {
     width: 70%;
-    margin: 80px auto;
+    margin: 20px auto;
     text-align: left;
+    color: rgb(227, 209, 191);
     border-radius: 5px;
-    background-color: #cdac79;
-    ;
+    background-color: rgb(31, 77, 87);
     padding: 20px;
 }
 
@@ -353,6 +360,6 @@ input[type=submit]:hover {
 }
 
 .fa-solid {
-    color: seagreen;
+    color: rgb(140, 112, 64);
     
 }
