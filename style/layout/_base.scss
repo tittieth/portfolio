@@ -1,113 +1,107 @@
 .pink {
     outline: 3px solid pink;
-    height: 50vh;
+    height: 65vh;
     width: 100vw;
-    margin-top: 20px;
+    text-align: left;
     position: relative;
 }
- /*-------- Hamburgermeny start ---------*/
-.menu-button {
-    width: 35px;
-    height: 35px;
-    background: transparent;
-    border: 0;
+ /*-------- Hamburgermeny start--------------
+ Gjord med hjälp av video av Kevin Powell  ---------*/
+ 
+ .nav-header {
+    background-color: rgb(206, 156, 157,0.8);
+    text-align: center;
     position: fixed;
-    right: 40px;
-    top: 20px;
-    z-index: 3;
-}
-      
-.menu-button span {
-    display: block;
-    width: 32px;
-    height: 4px;
-    background-color: black;
-    border-radius: 6px;
-    margin-bottom: 4px;
-    position: relative;
-    left: 0;
-    transition: left 0.3s ease-in-out;
-    margin-left: 6px;
-}
-      
-.orange input {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 4;
-    width: 35px;
-    height: 35px;
-    opacity: 0;
-    cursor: pointer;
-}
+    z-index: 999;
+    width: 100%;
+ }
 
-.orange input:checked + .hamburger-menu span {
+ .nav-toggle {
+    display: none;
+ }
+
+ .nav-toggle-label {
     position: absolute;
-} 
-
-.orange input:checked + .hamburger-menu span:nth-child(2) {
-    opacity: 0;
-}
-
-.orange input:checked + .hamburger-menu span:nth-child(1) {
-    transform: rotate(45deg);
-}
-
-.orange input:checked + .hamburger-menu span:nth-child(3) {
-    transform: rotate(-45deg);
-}
-      
-.menu-button span:nth-child(2) {
-    margin-left: 0;
-    transition: all 0.4s ease-in-out;
-}
-      
-.orange input:hover + .hamburger-menu .menu-button span:nth-child(2) {
-    left: 6px;
-}
-      
-nav {
-    position: fixed;
     top: 0;
     left: 0;
-    background-color: rgb(255, 255, 255, 0.8);
-    width: 100vw;
-    height: 100vh;
-    opacity: 0;
-    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-    visibility: hidden;
-    z-index: 2;
-}
-      
-input:checked + .hamburger-menu nav {
-    visibility: visible;
-    opacity: 1;
-}
-      
-.hamburger-menu ul {
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+ }
+
+ .nav-toggle-label span,
+ .nav-toggle-label span::before,
+ .nav-toggle-label span::after {
+    display: block;
+    background: black;
+    height: 3px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+ }
+
+ .nav-toggle-label span::before,
+ .nav-toggle-label span::after {
+    content: "";
+    position: absolute;
+ }
+
+ .nav-toggle-label span::before {
+    bottom: 7px;
+ }
+
+ .nav-toggle-label span::after {
+    top: 7px;
+ }
+
+ nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: rgb(206, 156, 157,0.8);
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;   
+ }
+
+ nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    color: black;
-    font-size: 3rem;
-    text-transform: uppercase;
-    text-shadow: 3px 3px rgb(191, 191, 191, 0.5);
-    display: flex;
-    flex-direction: column;
-    height: 80px;
-    justify-content: space-evenly;
-    text-align: center;
-}
-  
-.hamburger-menu ul a:link {
-    text-decoration: none;
-}
-  
-.hamburger-menu ul a:visited {
-    color: black;
-}  
+ }
 
-/* -----Hamburgermenu end------------ */
+ nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+ }
+
+ nav a {
+    color: darkcyan;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+ }
+
+ nav a:hover {
+    color: black;
+ }
+
+ .nav-toggle:checked ~ nav {
+    transform: scale(1,1) ;
+ }
+ 
+ .nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+ }
+
+/* -----Hamburgarmeny slut------------ */
 
 h2 {
     position: relative;
@@ -115,14 +109,15 @@ h2 {
     font-size: 2rem;
 }
 
-/* To change the word in the headline */
+/* Ändrar ord i huvudrubriken */
 .box {
     position: absolute;
+    left: 40px;
     text-align: left;
-    padding: 0 30px;
+    top:120px;
+    padding: 0 40px;
     font-size: 1rem;
-    border: 3px solid green;
-    width: 100vw;
+    width: 80vw;
     transform: translateY(20%)
 }
 
@@ -196,8 +191,13 @@ h2 {
     width: 100vw;
 }
 
+aside {
+    position: sticky;
+}
+
 
 .blue {
+    margin-top: 10px;
     outline: 3px solid blue;
     min-height: 60vh;
     width: 100vw;
@@ -205,7 +205,7 @@ h2 {
 
 .container-two {
     border: 2px solid grey;
-    margin-top: 50px;
+    margin-top: 30px;
     min-height: 60vh;
     display: flex;
     flex-direction: column;
@@ -301,6 +301,7 @@ footer {
 }
 
 
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], input[type=email],
 select,
@@ -344,7 +345,7 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #cdac79;
     ;
-    padding: 50px;
+    padding: 20px;
 }
 
 #subject {
