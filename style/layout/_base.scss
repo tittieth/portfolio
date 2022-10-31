@@ -112,6 +112,9 @@ h2 {
     font-size: 2rem;
 }
 
+.leaf {
+    display: none;
+}
 /* Ändrar ord i huvudrubriken */
 .box {
     position: absolute;
@@ -203,7 +206,7 @@ aside {
 
 
 .blue {
-    margin-top: 10px;
+    margin-top: 40px;
     outline: 3px solid blue;
     min-height: 60vh;
     width: 100vw;

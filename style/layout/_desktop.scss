@@ -1,6 +1,9 @@
 .box {
     padding: 0 180px;
     font-size: 2rem;
+    width: 60vw;
+    left: 90px;
+    top: 110px;
 }
 
 .word span {
@@ -11,4 +14,14 @@
 .form-container {
     width: 50%;
     margin-left: 20px;
+}
+
+.leaf {
+    display: block;
+    position: absolute;
+    left: 900px;
+    z-index: -3;
+    top: 180px;
+    transform: rotate(20deg);
+    
 }
