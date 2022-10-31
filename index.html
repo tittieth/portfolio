@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Rubik:ital,wght@0,300;0,400;0,600;0,900;1,300;1,400&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/6e63925041.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="/style/style.css" type="text/css">
@@ -14,61 +18,37 @@
 <body>
     <main>
         <section class="pink">
-            <header class="orange">
-                <input type="checkbox">
-                <div class="hamburger-menu">
-                    <button class="menu-button">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About me</a></li>
-                            <li><a href="#">Skills</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="box">
-                    <h1>
-                        Hi, I'm Tittie!<br>
-                        I'm a Front End Developer <br>and a
-                        <div class="word">
-                            <span>mum</span>
-                            <span>photographer</span>
-                            <span>dog lover</span>
-                            <span>traveller</span>
-                            <span>nature lover</span>
-                        </div>
-                    </h1>
-                </div>
+            <header class="nav-header">
+                <h1 class="logo"> <img src="/Images/sun-logo.png" alt="logo with a sun" width="80" height="80"> </h1>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
             </header>
+               
+            <div class="box">
+                <h1>
+                    Hi, I'm Tittie!<br>
+                    I'm a Front End Developer <br>and a
+                    <div class="word">
+                        <span>mum</span>
+                        <span>photographer</span>
+                        <span>dog lover</span>
+                        <span>traveler</span>
+                        <span>dreamer</span>
+                    </div>
+                </h1>
+            </div>
         </section>
-
-        <aside>
-            <!--Lägga in länkar till sociala medier som följer med när man scrollar -->
-            <ul>
-                <li>
-                    <!--Mejl-->
-                </li>
-                <li>
-                    <!--github-->
-                </li>
-                <li>
-                    <!--Linkedin-->
-                </li>
-                <li>
-                    <!--Facebook-->
-                </li>
-                <li>
-                    <!--Instagram-->
-                </li>
-            </ul>
-        </aside>
-
         <section class="blue">
             <header>
                 <h2>About me</h2>
@@ -135,7 +115,7 @@
 
         <footer>
             <!--Lägga in kontaktinfo-->
-            <p>Made with <i class="fa-solid fa-heart"></i> by Tittie Thomasson @2022</p>
+            <p>Made with <i class="fa-solid fa-heart"></i> by Tittie Thomasson ©2022</p>
         </footer>
 
     </main>
