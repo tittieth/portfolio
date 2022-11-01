@@ -1,8 +1,8 @@
- /*-------- Hamburgermeny start--------------
+ /*-------- Responsiv navigeringsmeny start--------------
  Gjord med hjälp av video av Kevin Powell  ---------*/
  
  .nav-header {
-    background-color: rgba(227,209, 191);
+    background-color: #96AA9A;
     text-align: center;
     position: fixed;
     z-index: 999;
@@ -27,7 +27,7 @@
  .nav-toggle-label span::before,
  .nav-toggle-label span::after {
     display: block;
-    background: black;
+    background: #3b342b;
     height: 3px;
     width: 2em;
     border-radius: 3px;
@@ -54,7 +54,7 @@
     font-size: 2rem;
     top: 100%;
     left: 0;
-    background: rgba(227,209, 191);
+    background: #96AA9A;
     width: 100%;
     transform: scale(1, 0);
     transform-origin: top;
@@ -73,7 +73,7 @@
  }
 
  nav a {
-    color: rgba(31, 77, 87);
+    color: #3b342b;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 600;
@@ -96,47 +96,49 @@
  }
 
 
-/* -----Hamburgarmeny slut------------ */
+/* -----Navigeringsmeny slut------------ */
 
+/* Behållare för första delen */
 .pink {
-    outline: 3px solid pink;
-    min-height: 55vh;
+    min-height: 40vh;
     width: 100vw;
     text-align: left;
     position: relative;
 }
 
+/* Styling för alla h2 */
 h2 {
     position: relative;
     margin: 20px 0;
     font-size: 2rem;
+    color: #3b342b;
+    text-decoration: #96AA9A wavy underline;
 }
 
+/* Bilden på lövet som börjar synas i tablet-läge */
 .leaf {
     visibility: hidden;
-
 }
-/* Ändrar ord i huvudrubriken */
+
+/* boxen med mitt namn i första delen */
 .box {
     position: absolute;
-    background-color: rgb(31, 77, 87);
-    color: rgb(227, 209, 191);
-    box-shadow: 5px 10px rgb(140, 112, 64);
+    background-color: #D5A670;
+    color: #3b342b;
+    box-shadow: 5px 10px #dee9eb;
     min-width: 90vw;
     margin-right: 40px;
     left: 10px;
     text-align: left;
     top: 150px;
-    
     font-size: 1.1rem;
-    
     transform: translateY(20%)
 }
 
+/* Ändrar ord i huvudrubriken */
 .word {
     display: inline-block;
-    color: rgba(191, 149, 78);
-
+    color: #1c394a;
 }
 
 .word span {
@@ -195,61 +197,67 @@ h2 {
     animation-delay: 8s;
 }
 
-/* Animation end */
+/* Animation slut */
 
-
-
-.orange {
-    outline: 3px solid orange;
-    min-height: 40vh;
-    width: 100vw;
-}
-
-aside {
-    position: sticky;
-}
-
-
+/* Wrapper som omsluter headern, bilden och texten om mig */
 .blue {
-    outline: 3px solid blue;
     width: 100vw;
 }
 
+/* Omsluter bilden på mig och texten */
 .container-two {
-    border: 2px solid grey;
-    margin-top: 5%;
+    margin-bottom: 30px;
     min-height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Innehåller bilden på mig */
 .green {
-    outline: 3px solid green;
+    background-color: #96AA9A;
     min-height: 50vh;
     width: 80vw;
     margin: 10px;
 }
 
+/* Innehåller texten om mig */
 .black {
-    outline: 3px solid black;
+    background-color: #D5A670;
     min-height: 50vh;
     width: 80vw;
     margin: 10px;
 }
 
+/* Omsluter allt i skills */
 .brown {
-    outline: 3px solid brown;
+    background-color: #dee9eb;
     min-height: 30vh;
     width: 100vw;
 }
 
-.purple {
-    outline: 3px solid purple;
-    width: 100vw;
-
+.brown p {
+    margin: 50px 0;
 }
 
+/* ikonerna i skills */
+.container-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.fa-brands {
+    color: #3b342b;
+    font-size: 3rem;
+}
+
+/* omsluter delen projekt */
+.purple {
+    width: 100vw;
+}
+
+/* gridlayouten i projektdelen */
 .grid-container {
     display: grid;
     min-height: 80vh;
@@ -258,65 +266,52 @@ aside {
     gap: 15px;
     grid-auto-flow: row;
     justify-content: space-around;
-    border: 3px solid black;
     margin-top: 30px;
-}
-
-.lightblue {
-    bottom: 0;
 }
 
 .box-one {
     grid-area: 1 / 1 / 2 / 2;
-    background-color: pink;
-
 }
 
 .box-two {
     grid-area: 1 / 2 / 2 / 3;
-    background-color: lightcoral;
+    background-color: #96AA9A;
 }
 
 .box-three {
     grid-area: 2 / 1 / 3/ 2;
-    background-color: pink;
+    background-color: #D5A670;
 }
 
 
 .box-four {
     grid-area: 2 / 2 / 3 / 3;
-    background-color: lightseagreen;
-
+    background-color: #D5A670;
 }
 
 .box-five {
     grid-area: 3/ 1 / 4 / 2;
-    background-color: aqua;
-
+    background-color: #dee9eb;
 }
 
 .box-six {
     grid-area: 3 / 2 / 4 / 3;
-    background-color: goldenrod;
+    background-color: #96AA9A;
 }
 
+/* Bildlänken till mitt repo i github */
+.project-one {
+    width: 100%;
+    height:100%;
+}
+
+/* Omsluter formuläret */
 .lightblue {
-    outline: 3px solid lightblue;
     min-height: 30vh;
     width: 100vw;
 }
 
-footer {
-    outline: 3px solid lightseagreen;
-    min-height: 20vh;
-    width: 100vw;
-    font-size: 1.3rem;
-    padding-top: 50px;
-}
-
-
-
-/* Style inputs with type="text", select elements and textareas */
+/* Styling för type="text", select elements och textareas i formuläret */
 input[type=text], input[type=email],
 select,
 textarea {
@@ -336,57 +331,47 @@ textarea {
         /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-/* Style the submit button with a specific background color etc */
+/* Styling för knappen send */
 input[type=submit] {
-    background-color: rgba(191, 149, 78);
+    background-color: #96AA9A;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+/* styling för när man för musen över knappen send */
 input[type=submit]:hover {
     background-color: rgba(227, 209, 191);
-    color: black;
 }
 
-/* Add a background color and some padding around the form */
+/* Behållare för formuläret*/
 .form-container {
     width: 70%;
     margin: 20px auto;
     text-align: left;
-    color: rgb(227, 209, 191);
+    color: #3b342b;
     border-radius: 5px;
-    background-color: rgb(31, 77, 87);
+    background-color: #D5A670;
     padding: 20px;
 }
 
+/* Subject delen i formuläret */
 #subject {
     height: 200px;
 }
 
+/* Styling för footern längst ner */
+footer {
+    background-color: #96AA9A;
+    min-height: 10vh;
+    width: 100vw;
+    font-size: 1.3rem;
+    padding-top: 20px;
+}
+
+/* styling för hjärtat i footern */
 .fa-solid {
-    color: rgb(140, 112, 64);
+    color: #3b342b;
     
-}
-
-.container-icons {
-    display: flex;
-    justify-content: space-around;
-}
-
-.fa-brands {
-    color: saddlebrown;
-    font-size: 3rem;
-}
-
-.brown p {
-    margin: 50px 0;
-}
-
-
-.project-one {
-    width: 100%;
-    height:100%;
 }

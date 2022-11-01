@@ -4,20 +4,19 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  scroll-behavior: smooth;
 }
 
 body {
   overflow-x: hidden;
-  background: rgba(248, 242, 235, 1.0);
-  font-family: 'Open Sans', sans-serif;
+  background: #f6f3ee;
+  font-family: 'Open Sans', sans-serif, helvetica;
+  scroll-behavior: smooth;
 }
 
 main {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0px;
-  outline: 3px solid lightgreen;
   text-align: center;
   overflow-x: hidden;
   position: relative;

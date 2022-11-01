@@ -1,5 +1,6 @@
-/*Hamburgermenyn start */
+/*Navigeringsmeny start */
 
+/* Tar bort hamburgermenyn */
 .nav-toggle-label {
     display:none;
 }
@@ -42,7 +43,8 @@ nav a::before {
     content: "";
     display: block;
     height: 5px;
-    background: black;
+    background: #4f463a;
+    border-radius: 5px;
     position: absolute;
     bottom: -.75em;
     left: 0;
@@ -53,18 +55,18 @@ nav a::before {
 
 nav a:hover::before {
     transform: scale(1,1);
-
 }
-
-/*Hamburgermenyn slut */
+/*Navigeringsmeny slut */
 
 h2 {
-    font-size: 2.3rem;
+    font-size: 3rem;
+    margin: 40px;
 }
 
 .pink {
     min-height: 80vh;
 }
+
 .container-two {
     flex-direction: row;
 }
@@ -131,10 +133,14 @@ h2 {
     width: 70%;
 }
 
+/* Bilden på löver */
 .leaf {
     visibility: visible;
+    opacity: 0.6;
     position: relative;
-    top: 280px;
+    max-width: 500px;
+    max-height: 800px;
+    top: 200px;
     left: 450px;
     z-index: -3;
     transform: rotate(20deg);  
@@ -143,4 +149,8 @@ h2 {
 .word span {
     bottom: 55px;
     left: 130px;
+}
+
+.lightblue {
+    padding-bottom: 40px;
 }

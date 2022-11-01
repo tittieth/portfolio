@@ -17,22 +17,23 @@
 }
 
 
+
 .form-container {
-    width: 50%;
-    margin-left: 20px;
+    width: 40%;
+    margin-left: 50px;
+    margin-top: 100px;
 }
 
 .leaf {
     visibility: visible;
     position: relative;
-    left: 800px;
-    top: 500px;
+    left: 820px;
+    top: 280px;
     z-index: -3;
     transform: rotate(20deg);  
 }
 
 .fa-brands {
-    color: seagreen;
     font-size: 4rem;
 }
 

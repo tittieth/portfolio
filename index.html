@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Rubik:ital,wght@0,300;0,400;0,600;0,900;1,300;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Rubik:ital,wght@0,300;0,400;0,600;0,900;1,300;1,400&display=swap"rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/6e63925041.js" crossorigin="anonymous"></script>
 
@@ -19,17 +17,18 @@
 
 <body>
     <main>
+        <div id="home"></div>
         <section class="pink">
             <header class="nav-header">
                 <h1 class="logo"><img src="/Images/sun-logo.png" alt="logo with a sun" width="80" height="80"> </h1>
                 <input type="checkbox" id="nav-toggle" class="nav-toggle">
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <label for="nav-toggle" class="nav-toggle-label">
@@ -40,25 +39,27 @@
                 <h1>
                     Hi, I'm Tittie!<br>
                     I'm a Front End Developer <br>and a</h1>
-                    <div class="word">
-                        <h1>
+                <div class="word">
+                    <h1>
                         <span>mum</span>
                         <span>photographer</span>
                         <span>dog lover</span>
                         <span>traveler</span>
                         <span>dreamer</span>
                     </h1>
-                    </div>
+                </div>
             </div>
             <div class="leaf">
                 <img src="Images/leaf.png" alt="a leaf" width="300" height="600">
             </div>
+            <div id="about"></div>
         </section>
         <section class="blue">
             <header>
                 <h2>About me</h2>
             </header>
             <div class="container-two">
+                <div id="skills"></div>
                 <div class="green">Bild på mig
                     <!--Lägga in bild -->
                 </div>
@@ -69,13 +70,24 @@
             <header>
                 <h2>Skills</h2>
             </header>
+            <h3>Lorem ipsum dolor sit.</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             <div class="container-icons">
-                <div class="icons"><i class="fa-brands fa-html5"></i><p>HTML5</p></div>
-                <div class="icons"><i class="fa-brands fa-css3-alt"></i><p>CSS3</p></div>
-                <div class="icons"><i class="fa-brands fa-github"></i><p>Github</p></div>
-                <div class="icons"><i class="fa-brands fa-sass"></i><p>SASS</p></div>
+                <div class="icons"><i class="fa-brands fa-html5"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="icons"><i class="fa-brands fa-css3-alt"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="icons"><i class="fa-brands fa-github"></i>
+                    <p>Github</p>
+                </div>
+                <div class="icons"><i class="fa-brands fa-sass"></i>
+                    <p>SASS</p>
+                </div>
             </div>
+            <div id="projects"></div>
+            <h3>Lorem ipsum dolor sit.</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
         </section>
         <section class="purple">
@@ -85,8 +97,7 @@
             <div class="grid-container">
                 <div class="box-one">
                     <a href="https://tittieth.github.io/to-the-moon/" target="_blank">
-                    <img class="project-one" alt="to-the-moon-project" src="/Images/to-the-moon.jpg"
-                    width=600" height="600">
+                        <img class="project-one" alt="to-the-moon-project" src="/Images/to-the-moon.jpg" width=600" height="600">
                     </a>
                 </div>
                 <div class="box-two"></div>
@@ -96,9 +107,11 @@
                 <div class="box-six"></div>
             </div>
         </section>
+        <div id="contact"></div>
         <section class="lightblue">
             <header>
                 <h2>Contact</h2>
+                <p></p>
             </header>
             <div class="form-container">
                 <form action="action_page.php">
@@ -115,18 +128,20 @@
                     <label for="subject">Subject:</label>
                     <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
 
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Send">
 
                 </form>
+                <div>
+                    <!--Lägg in något roligt, typ en bild-->
+                </div>
             </div>
         </section>
 
         <footer>
             <!--Lägga in kontaktinfo-->
-            <p>Made with <i class="fa-solid fa-heart"></i> by Tittie Thomasson ©2022</p>
+            <p>©2022 Made with <i class="fa-solid fa-heart"></i> by Tittie Thomasson</p>
         </footer>
 
     </main>
 </body>
-
 </html>
