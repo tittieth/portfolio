@@ -1,13 +1,19 @@
+.pink {
+    height: 100vh;
+}
+
+
 .box {
-    padding: 0 180px;
+    padding: 0 40px;
     font-size: 2rem;
-    width: 60vw;
-    left: 90px;
-    top: 160px;
+    min-width: 60vw;
+    left: 5%;
+    top: 180px;
 }
 
 .word span {
-    bottom: 43px;
+    bottom: 91px;
+    left: 220px;
 }
 
 
@@ -17,11 +23,19 @@
 }
 
 .leaf {
-    display: block;
-    position: absolute;
-    left: 900px;
+    visibility: visible;
+    position: relative;
+    left: 800px;
+    top: 500px;
     z-index: -3;
-    top: 230px;
-    transform: rotate(20deg);
-    
+    transform: rotate(20deg);  
+}
+
+.fa-brands {
+    color: seagreen;
+    font-size: 4rem;
+}
+
+.project-one {
+    max-height: 500px;
 }

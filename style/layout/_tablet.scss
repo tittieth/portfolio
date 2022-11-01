@@ -63,7 +63,7 @@ h2 {
 }
 
 .pink {
-    height: 100vh;
+    min-height: 80vh;
 }
 .container-two {
     flex-direction: row;
@@ -79,9 +79,13 @@ h2 {
 }
 
 .box {
-    padding: 0 100px;
+    padding: 0 20px;
     font-size: 1.2rem;
-    width: 70vw;
+    min-width: 70vw;
+}
+
+.project-one {
+    max-height: 400px;
 }
 
 
@@ -89,6 +93,7 @@ h2 {
 .grid-container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    min-height: 50vh;
 }
 
 .box-one {
@@ -124,4 +129,18 @@ h2 {
 /* Kontaktformuläret */
 .form-container {
     width: 70%;
+}
+
+.leaf {
+    visibility: visible;
+    position: relative;
+    top: 280px;
+    left: 450px;
+    z-index: -3;
+    transform: rotate(20deg);  
+}
+
+.word span {
+    bottom: 55px;
+    left: 130px;
 }

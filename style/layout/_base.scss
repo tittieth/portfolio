@@ -100,7 +100,7 @@
 
 .pink {
     outline: 3px solid pink;
-    height: 55vh;
+    min-height: 55vh;
     width: 100vw;
     text-align: left;
     position: relative;
@@ -113,7 +113,8 @@ h2 {
 }
 
 .leaf {
-    display: none;
+    visibility: hidden;
+
 }
 /* Ändrar ord i huvudrubriken */
 .box {
@@ -121,23 +122,27 @@ h2 {
     background-color: rgb(31, 77, 87);
     color: rgb(227, 209, 191);
     box-shadow: 5px 10px rgb(140, 112, 64);
-    left: 15px;
+    min-width: 90vw;
+    margin-right: 40px;
+    left: 10px;
     text-align: left;
-    top:140px;
-    padding: 0 20px;
+    top: 150px;
+    
     font-size: 1.1rem;
-    width: 90vw;
+    
     transform: translateY(20%)
 }
 
 .word {
     display: inline-block;
     color: rgba(191, 149, 78);
+
 }
 
 .word span {
     position: absolute;
-    bottom: 21px;
+    bottom: 51px;
+    left: 102px;
     overflow: hidden;
     animation: animate 10s linear infinite;
     opacity: 0;
@@ -206,15 +211,13 @@ aside {
 
 
 .blue {
-    margin-top: 40px;
     outline: 3px solid blue;
-    min-height: 60vh;
     width: 100vw;
 }
 
 .container-two {
     border: 2px solid grey;
-    margin-top: 30px;
+    margin-top: 5%;
     min-height: 60vh;
     display: flex;
     flex-direction: column;
@@ -243,14 +246,13 @@ aside {
 
 .purple {
     outline: 3px solid purple;
-    min-height: 120vh;
     width: 100vw;
 
 }
 
 .grid-container {
     display: grid;
-    min-height: 110vh;
+    min-height: 80vh;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 15px;
@@ -258,7 +260,10 @@ aside {
     justify-content: space-around;
     border: 3px solid black;
     margin-top: 30px;
+}
 
+.lightblue {
+    bottom: 0;
 }
 
 .box-one {
@@ -364,4 +369,24 @@ input[type=submit]:hover {
 .fa-solid {
     color: rgb(140, 112, 64);
     
+}
+
+.container-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa-brands {
+    color: saddlebrown;
+    font-size: 3rem;
+}
+
+.brown p {
+    margin: 50px 0;
+}
+
+
+.project-one {
+    width: 100%;
+    height:100%;
 }
