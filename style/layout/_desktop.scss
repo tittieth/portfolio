@@ -1,21 +1,81 @@
+/* Tar bort hamburgermenyn */
+.nav-toggle-label {
+    display:none;
+}
+
+.nav-header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+
+}
+
+.logo {
+    grid-column: 2 / 3;
+}
+
+nav {
+    all: unset;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    
+}
+
+nav li {
+    margin-left: 2em;
+    margin-bottom: 0;
+}
+
+nav a {
+    opacity: 1;
+    position: relative;
+    font-size: 1.3rem;
+}
+
+nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background: #4f463a;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    transform: scale(1,1);
+}
+/*Navigeringsmeny slut */
+
+
 .pink {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
 .box {
-    padding: 0 40px;
+    padding: 0 20px;
     font-size: 2rem;
-    min-width: 60vw;
-    left: 5%;
+    width: 70vw;
+    height: 50%;
+    left: 30px;
     top: 180px;
+    transform: translateY(20%)
 }
 
 .word span {
-    bottom: 91px;
-    left: 220px;
+    bottom: 93px;
+    left: 205px;
 }
-
 
 
 .form-container {
@@ -25,16 +85,12 @@
 }
 
 .leaf {
-    visibility: visible;
-    position: relative;
-    left: 820px;
-    top: 280px;
-    z-index: -3;
-    transform: rotate(20deg);  
+    left: 850px;
+    top: 250px;
 }
 
 .fa-brands {
-    font-size: 4rem;
+    font-size: 6rem;
 }
 
 .project-one {
