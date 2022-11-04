@@ -1,6 +1,5 @@
-
 .break {
-    display:none;
+    display: none;
 }
 
 .break-one {
@@ -13,19 +12,20 @@
 
 .profile-picture {
     width: 40vw;
-    margin-left: 30vw; 
+    margin-left: 30vw;
     top: 20px;
 }
 
-.picture-container{
+.picture-container {
     min-height: 85vh;
 }
 
-.black {
+.flower-container {
     background-image: url("/Images/dahliablommor-960.jpg");
 }
 
-.green, .black {
+.get-to-know-me,
+.flower-container {
     min-height: 50vh;
     width: 50%;
     margin: 10px;
@@ -85,7 +85,7 @@
 
 .socialmedia-container {
     width: 50%;
-    
+
 }
 
 .socialmedia-container h3 {
@@ -94,14 +94,18 @@
     top: 50px;
 }
 
-.fa-instagram , .fa-linkedin, .github-logo{
+.fa-instagram,
+.fa-linkedin,
+.github-logo {
     position: relative;
     bottom: 150px;
-    transition: all .2s ease-in-out; 
+    transition: all .2s ease-in-out;
 }
 
-.fa-instagram:hover:hover , .github-logo:hover, .fa-linkedin:hover {
-    transform: scale(1.8); 
+.fa-instagram:hover:hover,
+.github-logo:hover,
+.fa-linkedin:hover {
+    transform: scale(1.8);
 }
 
 .contact-container {

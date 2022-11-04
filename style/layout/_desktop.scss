@@ -1,6 +1,6 @@
 /* Tar bort hamburgermenyn */
 .nav-toggle-label {
-    display:none;
+    display: none;
 }
 
 .nav-header {
@@ -23,7 +23,7 @@ nav {
 
 nav ul {
     display: flex;
-    
+
 }
 
 nav li {
@@ -52,8 +52,9 @@ nav a::before {
 }
 
 nav a:hover::before {
-    transform: scale(1,1);
+    transform: scale(1, 1);
 }
+
 /*Navigeringsmeny slut */
 
 h1 {
@@ -73,12 +74,12 @@ h1 {
     min-height: 100vh;
 }
 
-.black {
-    .black {
-        background-image: url("/Images/dahliablommor-1440.jpg");
-    }
+.flower-container {
+    background-image: url("/Images/dahliablommor-1440.jpg");
 }
-.green, .black {
+
+.get-to-know-me,
+.flower-container {
     min-height: 65vh;
 }
 
@@ -89,7 +90,7 @@ h1 {
 
 .profile-picture {
     width: 28vw;
-    margin-left: 10vw; 
+    margin-left: 10vw;
     top: 40px;
 }
 
