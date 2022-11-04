@@ -56,8 +56,12 @@ nav a:hover::before {
 }
 /*Navigeringsmeny slut */
 
+h1 {
+    margin: 100px 50px 0 50px;
+}
 
-.pink {
+
+.section-hello {
     flex-direction: row;
     align-content: space-around;
 }
@@ -69,6 +73,11 @@ nav a:hover::before {
     min-height: 100vh;
 }
 
+.black {
+    .black {
+        background-image: url("/Images/dahliablommor-1440.jpg");
+    }
+}
 .green, .black {
     min-height: 65vh;
 }

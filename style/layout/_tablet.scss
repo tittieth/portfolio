@@ -1,60 +1,3 @@
-/*Navigeringsmeny start */
-
-/* Tar bort hamburgermenyn *//*
-.nav-toggle-label {
-    display:none;
-}
-.nav-header {
-    display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-}
-.logo {
-    grid-column: 2 / 3;
-}
-nav {
-    all: unset;
-    grid-column: 3 / 4;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-nav ul {
-    display: flex;
-    
-}
-nav li {
-    margin-left: 2em;
-    margin-bottom: 0;
-}
-nav a {
-    opacity: 1;
-    position: relative;
-    font-size: 1.3rem;
-}
-nav a::before {
-    content: "";
-    display: block;
-    height: 5px;
-    background: #4f463a;
-    border-radius: 5px;
-    position: absolute;
-    bottom: -.75em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms;
-}
-nav a:hover::before {
-    transform: scale(1,1);
-}
-Navigeringsmeny slut */
-
-h2 {
-    font-size: 3rem;
-    margin: 40px;
-}
-
-
 
 .break {
     display:none;
@@ -63,6 +6,7 @@ h2 {
 .break-one {
     display: inline;
 }
+
 .container-two {
     flex-direction: row;
 }
@@ -75,6 +19,10 @@ h2 {
 
 .picture-container{
     min-height: 85vh;
+}
+
+.black {
+    background-image: url("/Images/dahliablommor-960.jpg");
 }
 
 .green, .black {
@@ -131,12 +79,6 @@ h2 {
 }
 
 
-
-.word span {
-    bottom: 55px;
-    left: 130px;
-}
-
 .lightblue {
     padding-bottom: 40px;
 }
@@ -148,7 +90,6 @@ h2 {
 
 .socialmedia-container h3 {
     position: relative;
-    font-size: 2.3rem;
     margin: 0;
     top: 50px;
 }
