@@ -23,10 +23,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Rubik:ital,wght@0,300;0,400;0,600;0,900;1,300;1,400&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
-        
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/6e63925041.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/style/style.css" type="text/css">
     <title>Tittie Thomasson - Front end developer resume</title>
@@ -36,8 +34,8 @@
     <main>
         <div id="home"></div>
         <header class="nav-header">
-            <h1 class="logo"><img src="/Images/sun-logo.png" alt="logo with a brown sun" width="80" height="80">
-            </h1>
+            <div class="logo"><img src="/Images/sun-logo.png" alt="logo with a brown sun" width="80" height="80">
+            </div>
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <nav>
                 <ul>
@@ -54,32 +52,12 @@
         </header>
         <section class="pink">
             <div class="box">
-                <h1>
-                    Hi, I'm Tittie!
-                </h1>
-                <h2>I'm a<br>
+                <h1>Hi, I'm Tittie!<br> I'm a<br>
                     Front End Developer<br>
-                    and a</h2>
-                <!--          <span class="word">
-                    <h1>
-                        <span>mum</span>
-                        <span>photographer</span>
-                        <span>dog lover</span>
-                        <span>traveler</span>
-                        <span>dreamer</span>
-                    </h1>
-                </span>-->
+                </h1>
             </div>
-            <div class="leaf-container">
-                <img src="/Images/dahliablommor480.jpg"
-                alt="different sorts of dahliaflowers"
-                width="480" height="719"
-                srcset="/Images/dahliablommor480.jpg 480w,
-                        /Images/dahliablommor960.jpg 960w,
-                        /Images/dahliablommor1440.jpg 1440w,
-                        /Images/dahliablommor1920.jpg 1920w"
-                    >
-
+            <div class="picture-container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, eius.</p>
             </div>
         </section>
         <section class="blue">
@@ -88,10 +66,16 @@
                 <hr>
             </header>
             <div class="container-two">
-                <div class="green">Bild på mig
-                    <!--Lägga in bild -->
+                <div class="green">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ex?
+                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, voluptate.
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, consequuntur.
+                    </p>
                 </div>
-                <div class="black"> text </div>
+                <div class="black">
+                    <img class="profile-picture" src="/Images/profilbild-tittie-960.jpg"
+                        alt="A description of the image." width="600" height="800" loading="lazy">
+                </div>
             </div>
         </section>
         <section class="brown">
@@ -126,7 +110,8 @@
             <div class="grid-container">
                 <div class="box-one">
                     <a href="https://tittieth.github.io/to-the-moon/" target="_blank">
-                        <img class="project-one" alt="to-the-moon-project" src="/Images/to-the-moon.jpg" width=600" height="600">
+                        <img class="project-one" alt="to-the-moon-project" src="/Images/to-the-moon.jpg" width=600"
+                            height="600">
                     </a>
                 </div>
                 <div class="box-two"></div>
@@ -158,7 +143,7 @@
                         <label for="subject">Subject:</label>
                         <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
 
-                        <button class="btn" value="send">
+                        <button class="btn" type="submit " value="send">
                             <span>Send email</span>
                         </button>
                     </form>
