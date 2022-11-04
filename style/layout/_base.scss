@@ -1,3 +1,8 @@
+$base: #E8DED1;
+$olive: #919478;
+$pink: #B7796F;
+$dark-grey: #212427;
+
 /*-------- Responsiv navigeringsmeny start--------------
  Gjord med hjälp av video av Kevin Powell  ---------*/
  
@@ -162,7 +167,7 @@ hr {
 /* boxen med Hi I am */
 .box {
     min-height: 50vh;
-    background-color: $olive;
+    background-color: pink;
     color: #3b342b;
    
 }
@@ -222,6 +227,7 @@ hr {
 .container-icons {
     display: flex;
     justify-content: space-around;
+    
 }
 
 .brown h3 {
