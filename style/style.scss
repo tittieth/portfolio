@@ -1,3 +1,7 @@
+$base-color: #E8DED1;
+$second-color: #919478;
+
+
 /* Normalize */
 @import "vendor/normalize";
 
@@ -16,7 +20,6 @@ body {
 main {
   min-width: 100vw;
   min-height: 100vh;
-  margin: 0px;
   text-align: center;
   overflow-x: hidden;
   position: relative;
@@ -31,7 +34,7 @@ main {
 }
 
 /*styling för tablet*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   @import "layout/tablet";
 }
 
