@@ -1,7 +1,3 @@
-$base: #E8DED1;
-$olive: #919478;
-$pink: #B7796F;
-$dark-grey: #212427;
 
 /*-------- Responsiv navigeringsmeny start--------------
  Gjord med hjälp av video av Kevin Powell  ---------*/
@@ -33,8 +29,8 @@ $dark-grey: #212427;
  .nav-toggle-label span::after {
     display: block;
     background: #3b342b;
-    height: 3px;
-    width: 2em;
+    height: 4px;
+    width: 3rem;
     border-radius: 3px;
     position: relative;
  }
@@ -46,11 +42,11 @@ $dark-grey: #212427;
  }
 
  .nav-toggle-label span::before {
-    bottom: 7px;
+    bottom: 8px;
  }
 
  .nav-toggle-label span::after {
-    top: 7px;
+    top: 8px;
  }
 
  nav {
@@ -88,7 +84,7 @@ $dark-grey: #212427;
  }
 
  nav a:hover {
-    color: $dark-grey;
+    color: $pink;
  }
 
  .nav-toggle:checked ~ nav {
@@ -118,10 +114,12 @@ $dark-grey: #212427;
 
 
 .profile-picture {
+    position: relative;
     border: 3px solid black;
+    max-width: 50vw;
     height: auto;
-    width: 50vw;
-    margin: 30px auto;
+    margin-left: 25vw;
+    top: 40px;
     border-radius: 80px 80px 0 0;
     box-shadow: 10px 20px black;
    
@@ -147,7 +145,7 @@ h2 {
 }
 
 h3 {
-    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-size: clamp(1.5rem, 4vw, 2rem);
     margin-bottom: 30px;
 }
 
@@ -157,17 +155,14 @@ hr {
 }
 /* Bilden på lövet som börjar synas i tablet-läge */
 .picture-container{
-    background-image: url("/Images/dahliablommor480.jpg");
-    background-position: center;
-    background-size: cover;
     min-height: 50vh;
-
+    background-color: $pink;
 }
 
 /* boxen med Hi I am */
 .box {
-    min-height: 50vh;
-    background-color: pink;
+    min-height: 40vh;
+    background-color: $olive;
     color: #3b342b;
    
 }
@@ -205,6 +200,9 @@ hr {
 
 /* Innehåller texten om mig */
 .black {
+    background-image: url("/Images/dahliablommor480.jpg");
+    background-position: center;
+    background-size: cover;
     background-color: $pink;
     min-height: 50vh;
     border-radius: 10%;
@@ -280,7 +278,7 @@ hr {
 
 .box-five {
     grid-area: 3/ 1 / 4 / 2;
-    background-color: $beige;
+    background-color: $base;
 }
 
 .box-six {

@@ -68,11 +68,17 @@ h2 {
 }
 
 .profile-picture {
-    width: 40vw;  
+    width: 40vw;
+    margin-left: 30vw; 
+    top: 20px;
+}
+
+.picture-container{
+    min-height: 85vh;
 }
 
 .green, .black {
-    min-height: 80vh;
+    min-height: 50vh;
     width: 50%;
     margin: 10px;
 }

@@ -69,14 +69,19 @@ nav a:hover::before {
     min-height: 100vh;
 }
 
+.green, .black {
+    min-height: 65vh;
+}
+
 .picture-container {
     width: 50%;
-    min-height: 100vh;
 }
 
 
 .profile-picture {
-    width: 30vw;  
+    width: 28vw;
+    margin-left: 10vw; 
+    top: 40px;
 }
 
 
