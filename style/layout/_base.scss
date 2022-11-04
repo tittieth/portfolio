@@ -2,7 +2,7 @@
  Gjord med hjälp av video av Kevin Powell  ---------*/
  
  .nav-header {
-    background-color: $base-color;
+    background-color: $base;
     text-align: center;
     position: fixed;
     z-index: 999;
@@ -54,7 +54,7 @@
     font-size: 2rem;
     top: 100%;
     left: 0;
-    background: $base-color;
+    background: $base;
     width: 100%;
     transform: scale(1, 0);
     transform-origin: top;
@@ -83,7 +83,7 @@
  }
 
  nav a:hover {
-    color: rgba(248, 242, 235);
+    color: $dark-grey;
  }
 
  .nav-toggle:checked ~ nav {
@@ -118,26 +118,32 @@
     width: 50vw;
     margin: 30px auto;
     border-radius: 80px 80px 0 0;
+    box-shadow: 10px 20px black;
    
 }
-
+.profession {
+    margin: 10px 60px 20px 60px;
+}
 h1 {
-    margin: 50px 0;
-    font-size: 8vw;
+    margin: 100px 50px 0 50px;
+    font-size: clamp(2rem, 10vw, 6rem);
 }
 
-.developer {
-    font-family: 'Shadows Into Light Two', cursive;
-    font-size: 12vw;
+p {
+    font-size: clamp(1rem, 2.5vw, 2rem);
 }
-
 
 
 /* Styling för alla h2 */
 h2 {
     margin: 60px 60px 20px 60px;
-    font-size: 2rem;
     color: #3b342b;
+    font-size: clamp(2.5rem, 5vw, 5rem);
+}
+
+h3 {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    margin-bottom: 30px;
 }
 
 hr {
@@ -146,7 +152,9 @@ hr {
 }
 /* Bilden på lövet som börjar synas i tablet-läge */
 .picture-container{
-    background-color: orange;
+    background-image: url("/Images/dahliablommor480.jpg");
+    background-position: center;
+    background-size: cover;
     min-height: 50vh;
 
 }
@@ -154,7 +162,7 @@ hr {
 /* boxen med Hi I am */
 .box {
     min-height: 50vh;
-    background-color: #919478;
+    background-color: $olive;
     color: #3b342b;
    
 }
@@ -168,7 +176,6 @@ hr {
     position: relative;
     display: flex;
     flex-direction: column;
-    border: 3px solid black;
     min-height: auto;
     max-width: 100%;
 
@@ -185,21 +192,24 @@ hr {
 
 /* Innehåller bilden på mig */
 .green {
-    background-color: $base-color;
+    background-color: $base;
     min-height: 50vh;
     padding: 30px;
+    border-radius: 10%;
 }
 
 /* Innehåller texten om mig */
 .black {
-    background-color: #B7796F;
+    background-color: $pink;
     min-height: 50vh;
+    border-radius: 10%;
+    margin-top: 20px;
    
 }
 
 /* Omsluter allt i skills */
 .brown {
-    background-color: $base-color;
+    background-color: $base;
     min-height: 30vh;
     width: 100%;
 }
@@ -248,28 +258,28 @@ hr {
 
 .box-two {
     grid-area: 1 / 2 / 2 / 3;
-    background-color: #96AA9A;
+    background-color: $olive;
 }
 
 .box-three {
     grid-area: 2 / 1 / 3/ 2;
-    background-color: #D5A670;
+    background-color: $pink;
 }
 
 
 .box-four {
     grid-area: 2 / 2 / 3 / 3;
-    background-color: #D5A670;
+    background-color: $pink;
 }
 
 .box-five {
     grid-area: 3/ 1 / 4 / 2;
-    background-color: #dee9eb;
+    background-color: $beige;
 }
 
 .box-six {
     grid-area: 3 / 2 / 4 / 3;
-    background-color: #96AA9A;
+    background-color: $olive;
 }
 
 /* Bildlänken till mitt repo i github */
@@ -293,7 +303,7 @@ textarea {
     /* Full width */
     padding: 12px;
     /* Some padding */
-    border: 1px solid black;
+    border: 1px solid $dark-grey;
     /* Gray border */
     border-radius: 4px;
     /* Rounded borders */
@@ -319,7 +329,7 @@ textarea {
 
 /* styling för när man för musen över knappen send */
 .btn:hover {
-    background-color: $base-color;
+    background-color: $base;
     color: #3b342b;
 }
 
@@ -335,17 +345,11 @@ textarea {
 }
 
 .form-container p {
-    font-size: 2rem;
     font-family: tangerine;
     margin-bottom: 30px;
     text-align: center;
 }
 
-
-.contact-container h3 {
-    font-size: 2rem;
-
-}
 
 
 .socialmedia-container {
@@ -372,10 +376,9 @@ textarea {
 
 /* Styling för footern längst ner */
 footer {
-    background-color: $base-color;
+    background-color: $base;
     min-height: 10vh;
     width: 100%;
-    font-size: 1.3rem;
     padding-top: 20px;
 }
 

@@ -67,9 +67,14 @@ h2 {
     flex-direction: row;
 }
 
+.profile-picture {
+    width: 40vw;  
+}
+
 .green, .black {
     min-height: 80vh;
     width: 50%;
+    margin: 10px;
 }
 
 .project-one {

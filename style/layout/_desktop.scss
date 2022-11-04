@@ -59,10 +59,18 @@ nav a:hover::before {
 
 .pink {
     flex-direction: row;
+    align-content: space-around;
 }
 
 /* boxen med Hi I am */
 
+.box {
+    width: 50%;
+}
+
+.picture-container {
+    width: 50%;
+}
 
 
 .profile-picture {

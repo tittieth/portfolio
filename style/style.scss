@@ -1,5 +1,8 @@
-$base-color: #E8DED1;
-$second-color: #919478;
+$base: #E8DED1;
+$olive: #919478;
+$pink: #B7796F;
+$dark-grey: #212427;
+
 
 
 /* Normalize */
@@ -16,6 +19,7 @@ body {
   font-family: 'Open Sans', sans-serif, helvetica;
   scroll-behavior: smooth;
   font-size: 2vw;
+  color: $dark-grey;
 }
 
 main {
