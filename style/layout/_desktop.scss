@@ -59,7 +59,11 @@ nav a:hover::before {
 /*Navigeringsmeny slut */
 
 h1 {
-    margin: 200px 50px 0 150px;
+    margin: 200px 50px 50px 150px;
+}
+
+hr {
+    margin: 20px auto 70px auto;
 }
 
 .profession {
@@ -97,6 +101,7 @@ h1 {
     position: relative;
     top: -140px;
     right: 100px;
+    margin: 0;
 }
 
 

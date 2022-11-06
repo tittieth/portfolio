@@ -1,3 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background: #fcf7f7;
+    font-family: 'Open Sans', sans-serif, helvetica;
+    scroll-behavior: smooth;
+    color: $dark-grey;
+}
+
+main {
+    text-align: center;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 /*-------- Responsiv navigeringsmeny start--------------
  Gjord med hjälp av video av Kevin Powell  ---------*/
@@ -116,17 +138,19 @@ nav a:hover {
     border-radius: 9999px;
     overflow-x: hidden;
     border: 8px dotted $dark-pink;
+    margin-bottom: 60px;
 }
 
 /* ----------------------Texten front delveloper...----------------- */
 .profession {
-    margin: 10px 60px 20px 70px;  
+    margin: 10px 60px 20px 70px;
 }
 
 /* ----------------------Style för alla h1----------------- */
 h1 {
-    margin: 50px 50px 0 50px;
+    margin: 60px 0 20px 50px;
     font-size: clamp(2rem, 6vw, 7rem);
+    font-family: 'Noto Nastaliq Urdu', serif;
 }
 
 /* ----------------------Style för alla p-taggar----------------- */
@@ -154,7 +178,7 @@ h3 {
 
 hr {
     width: 60vw;
-    margin: 50px auto;
+    margin: 15px auto;
 }
 
 /* ----------------------boxen med profilbilden----------------- */
@@ -165,7 +189,6 @@ hr {
     margin-top: 50px;
     background-color: $base;
     width: 100%;
-
 }
 
 /* ------------boxen med Hi I am ---------------------*/

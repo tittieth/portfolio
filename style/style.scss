@@ -9,34 +9,6 @@ $dark-grey: #212427;
 /* Normalize */
 @import "vendor/normalize";
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-body {
-  overflow-x: hidden;
-  background: #f6f3ee;
-  font-family: 'Open Sans', sans-serif, helvetica;
-  scroll-behavior: smooth;
-  font-size: 2vw;
-  color: $dark-grey;
-}
-
-main {
-  text-align: center;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 /* styling för mobil */
 @media screen and (min-width: 325px) {
   @import "layout/base";
