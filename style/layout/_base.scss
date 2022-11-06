@@ -148,15 +148,15 @@ nav a:hover {
 
 /* ----------------------Style för alla h1----------------- */
 h1 {
-    margin: 60px 0 20px 50px;
-    font-size: clamp(2rem, 6vw, 7rem);
+    margin: 50px 0 20px 50px;
+    font-size: clamp(3rem, 2.33rem + 3.33vw, 7rem);
     font-family: 'Noto Nastaliq Urdu', serif;
 }
 
 /* ----------------------Style för alla p-taggar----------------- */
 
 p {
-    font-size: clamp(1rem, 1vw, 1.5rem);
+    font-size: clamp(1rem, 0.66rem + 1.66vw, 3rem);
 }
 
 
@@ -164,13 +164,13 @@ p {
 h2 {
     margin: 60px 60px 20px 60px;
     color: $dark-grey;
-    font-size: clamp(1.5rem, 3vw, 5rem);
+    font-size: clamp(1.5rem, 0.9rem + 2.9vw, 5rem);
 }
 
 /* ----------------------style för alla h3----------------- */
 
 h3 {
-    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-size: clamp(1.5rem, 1.08rem + 2.08vw, 4rem);
     margin-bottom: 30px;
 }
 
