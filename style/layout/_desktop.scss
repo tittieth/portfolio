@@ -59,12 +59,13 @@ nav a:hover::before {
 /*Navigeringsmeny slut */
 
 h1 {
-    margin: 150px 50px 0 50px;
+    margin: 200px 50px 0 150px;
 }
 
-h2 {
-    margin: 60px 60px 20px 10px;
+.profession {
+    margin: 10px 60px 20px 180px;  
 }
+
 
 
 .section-hello {
@@ -81,7 +82,7 @@ h2 {
 
 
 .get-to-know-me,
-.flower-container {
+.experience-container {
     min-height: 65vh;
 }
 
@@ -94,10 +95,9 @@ h2 {
 
 .picture-container img {
     position: relative;
-    top: -120px;
+    top: -140px;
     right: 100px;
 }
-
 
 
 

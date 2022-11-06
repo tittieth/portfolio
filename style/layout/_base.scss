@@ -120,14 +120,13 @@ nav a:hover {
 
 /* ----------------------Texten front delveloper...----------------- */
 .profession {
-    margin: 10px 60px 20px 70px;
-    
+    margin: 10px 60px 20px 70px;  
 }
 
 /* ----------------------Style för alla h1----------------- */
 h1 {
     margin: 50px 50px 0 50px;
-    font-size: clamp(2rem, 5vw, 6rem);
+    font-size: clamp(2rem, 6vw, 7rem);
 }
 
 /* ----------------------Style för alla p-taggar----------------- */
@@ -155,7 +154,7 @@ h3 {
 
 hr {
     width: 60vw;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 /* ----------------------boxen med profilbilden----------------- */
@@ -210,7 +209,7 @@ hr {
 }
 
 /* ----------------------boxen med blommorna----------------- */
-.flower-container {
+.experience-container {
     background-color: $pink;
     min-height: 50vh;
     padding: 30px;
@@ -227,19 +226,13 @@ hr {
 
 /* ----------------------för att flytta p-taggarna i skills-containern----------------- */
 .skills-container p {
-    margin: 50px 0;
+    margin: 50px 0 70px 0;
 }
 
 /* -----------ikonerna i skills------------------ */
 .container-icons {
     display: flex;
     justify-content: space-around;
-
-}
-
-/* ----------------------för att öka avståndet på h3an i skills-containern----------------- */
-.skills-container h3 {
-    margin-top: 60px;
 }
 
 /* ----------------------styling för ikonerna----------------- */
