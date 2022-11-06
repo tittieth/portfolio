@@ -1,11 +1,19 @@
 
-$base: #E8DED1;
+$base: #faeee7;
 $olive: #919478;
-$pink: #B7796F;
+$pink: #f7c9c9;
+$dark-pink: #fa709a;
 $dark-grey: #212427;
+
 
 /* Normalize */
 @import "vendor/normalize";
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 * {
   box-sizing: border-box;

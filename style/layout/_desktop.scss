@@ -1,3 +1,4 @@
+
 /* Tar bort hamburgermenyn */
 .nav-toggle-label {
     display: none;
@@ -58,7 +59,11 @@ nav a:hover::before {
 /*Navigeringsmeny slut */
 
 h1 {
-    margin: 100px 50px 0 50px;
+    margin: 150px 50px 0 50px;
+}
+
+h2 {
+    margin: 60px 60px 20px 10px;
 }
 
 
@@ -70,13 +75,10 @@ h1 {
 /* boxen med Hi I am */
 
 .box {
-    width: 50%;
+    width: 60%;
     min-height: 100vh;
 }
 
-.flower-container {
-    background-image: url("/Images/dahliablommor-1440.jpg");
-}
 
 .get-to-know-me,
 .flower-container {
@@ -84,14 +86,16 @@ h1 {
 }
 
 .picture-container {
-    width: 50%;
+    position: relative;
+    width: 40%;
+    min-height: 100vh;
+    
 }
 
-
-.profile-picture {
-    width: 28vw;
-    margin-left: 10vw;
-    top: 40px;
+.picture-container img {
+    position: relative;
+    top: -120px;
+    right: 100px;
 }
 
 

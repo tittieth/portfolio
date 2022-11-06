@@ -10,18 +10,17 @@
     flex-direction: row;
 }
 
-.profile-picture {
-    width: 40vw;
-    margin-left: 30vw;
-    top: 20px;
+.profession {
+    margin: 30px 60px 20px 200px; 
 }
 
 .picture-container {
-    min-height: 85vh;
+    width: 100%;
 }
 
-.flower-container {
-    background-image: url("/Images/dahliablommor-960.jpg");
+
+h1 {
+    margin: 100px 50px 0 180px;
 }
 
 .get-to-know-me,
