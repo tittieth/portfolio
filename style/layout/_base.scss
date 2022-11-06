@@ -1,3 +1,5 @@
+/* styling som gäller för hela sidan */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,11 +19,12 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    line-height: 1.5;
 }
 
 
 
-/*-------- Responsiv navigeringsmeny start--------------
+/*-------- Responsiv Hamburgersmeny start--------------
  Gjord med hjälp av video av Kevin Powell  ---------*/
 
 .nav-header {
@@ -119,7 +122,7 @@ nav a:hover {
 }
 
 
-/* -----Navigeringsmeny slut------------ */
+/* -----Hamburgermeny slut------------ */
 
 /* Behållare för första delen */
 .section-hello {
@@ -156,7 +159,7 @@ h1 {
 /* ----------------------Style för alla p-taggar----------------- */
 
 p {
-    font-size: clamp(1rem, 0.66rem + 1.66vw, 3rem);
+    font-size: clamp(1rem, 0.83rem + 0.83vw, 2rem);
 }
 
 
@@ -231,7 +234,7 @@ hr {
     margin-bottom: 20px;
 }
 
-/* ----------------------boxen med blommorna----------------- */
+/* ----------------------boxen med erfarenhet----------------- */
 .experience-container {
     background-color: $pink;
     min-height: 50vh;
@@ -320,14 +323,7 @@ hr {
     height: 100%;
 }
 
-/* ----------------Omsluter formuläret------------- */
-contact-form-container {
-    position: relative;
-    min-height: 30vh;
-    width: 100vw;
-}
-
-/* Styling för type="text", select elements och textareas i formuläret */
+/* --------Styling för type="text", select elements och textareas i formuläret ----------*/
 input[type=text],
 input[type=email],
 select,
@@ -348,7 +344,7 @@ textarea {
         /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-/* Styling för knappen send */
+/* ------Styling för knappen send----------- */
 .btn {
     position: relative;
     background-color: $dark-grey;

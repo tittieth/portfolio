@@ -1,5 +1,5 @@
 
-/* Tar bort hamburgermenyn */
+/* Gör om hamburgermenyn till en vanlig horizontell navigeringsmeny */
 .nav-toggle-label {
     display: none;
 }
@@ -56,39 +56,48 @@ nav a:hover::before {
     transform: scale(1, 1);
 }
 
-/*Navigeringsmeny slut */
+/*Hamburgermeny slut slut */
+
+/* ----------------------Style för alla h1----------------- */
 
 h1 {
     margin: 150px 50px 50px 150px;
 }
 
+/* ----------------------style för de horizontella linjerna under rubrikerna----------------- */
+
 hr {
     margin: 20px auto 70px auto;
 }
+
+/* ----------------------Texten front delveloper...----------------- */
 
 .profession {
     margin: 10px 60px 20px 180px;  
 }
 
-
+/*-------- Behållare för första delen---------- */
 
 .section-hello {
     flex-direction: row;
     align-content: space-around;
 }
 
-/* boxen med Hi I am */
+/*--------- boxen med Hi I am --------------*/
 
 .box {
     width: 60%;
     min-height: 100vh;
 }
 
+/* ----------------------boxarna med info om mig och erfarenhet----------------- */
 
 .get-to-know-me,
 .experience-container {
     min-height: 65vh;
 }
+
+/* ----------------------boxen med profilbilden----------------- */
 
 .picture-container {
     position: relative;
@@ -97,14 +106,16 @@ hr {
     
 }
 
+/* ----------------------Profilbilden----------------- */
+
 .picture-container img {
     position: relative;
-    top: -140px;
+    top: -100px;
     right: 100px;
     margin: 0;
 }
 
-
+/* ----------------------omsluter formuläret----------------- */
 
 .form-container {
     width: 40%;
@@ -112,11 +123,13 @@ hr {
     margin-top: 100px;
 }
 
-
+/* ----------------------Ikonerna till sociala medier och under skills----------------- */
 
 .fa-brands {
     font-size: 6rem;
 }
+
+/* -----------Bildlänken till mitt repo i github -----------------*/
 
 .project-one {
     max-height: 500px;

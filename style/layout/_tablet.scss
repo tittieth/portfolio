@@ -1,27 +1,26 @@
-.break {
-    display: none;
-}
 
-.break-one {
-    display: inline;
-}
-
+/* -------Omsluter bilden på mig och texten---------------- */
 .container-two {
     flex-direction: row;
 }
+/* ----------------------Texten front delveloper...----------------- */
 
 .profession {
     margin: 30px 60px 20px 200px;
 }
 
+/* ----------------------boxen med profilbilden----------------- */
+
 .picture-container {
     width: 100%;
 }
-
+/* ----------------------styling för att positioner h1----------------- */
 
 h1 {
     margin: 100px 50px 0 180px;
 }
+
+/* ----------------------boxarna med info om mig och erfarenhet----------------- */
 
 .get-to-know-me,
 .experience-container {
@@ -30,12 +29,14 @@ h1 {
     margin: 10px;
 }
 
+/* -----------Bildlänken till mitt repo i github -----------------*/
+
 .project-one {
     max-height: 400px;
 }
 
 
-/* Projekt-boxarna */
+/* ----------Projekt-boxarna ändrar layouten------------- */
 .grid-container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -72,27 +73,28 @@ h1 {
 
 }
 
-/* Kontaktformuläret */
+/* ---------projektboxarna slut --------------*/
+
+/* ----------Kontaktformuläret------------ */
 .form-container {
     width: 70%;
 }
 
-
-.lightblue {
-    padding-bottom: 40px;
-}
+/* ----------------------Omlsuter ikonerna för sociala-medier ----------------- */
 
 .socialmedia-container {
     width: 50%;
 
 }
 
+/* ----------------------texten Lets connect vid sociala-medier ----------------- */
 .socialmedia-container h3 {
     position: relative;
     margin: 0;
     top: 50px;
 }
 
+/* ----------------------ikonerna som länkar till sociala medier ----------------- */
 .fa-instagram,
 .fa-linkedin,
 .github-logo {
@@ -101,11 +103,14 @@ h1 {
     transition: all .2s ease-in-out;
 }
 
+/* ----------------------för att göra ikonerna större när man för musen över ----------------- */
 .fa-instagram:hover:hover,
 .github-logo:hover,
 .fa-linkedin:hover {
     transform: scale(1.8);
 }
+
+/* ----------------------omsluter formuläret och sociala medier ----------------- */
 
 .contact-container {
     display: flex;
