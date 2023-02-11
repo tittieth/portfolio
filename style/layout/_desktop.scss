@@ -60,8 +60,9 @@ nav a:hover::before {
 
 /* ----------------------Style för alla h1----------------- */
 
-h1 {
-    margin: 150px 50px 50px 150px;
+.header {
+    margin: 180px 50px 0 10px;
+    padding: 100px;
 }
 
 /* ----------------------style för de horizontella linjerna under rubrikerna----------------- */
@@ -73,7 +74,7 @@ hr {
 /* ----------------------Texten front delveloper...----------------- */
 
 .profession {
-    margin: 10px 60px 20px 180px;  
+    margin: -90px 60px 20px 120px;  
 }
 
 /*-------- Behållare för första delen---------- */
@@ -95,6 +96,7 @@ hr {
 .get-to-know-me,
 .experience-container {
     min-height: 65vh;
+    margin: 0 30px;
 }
 
 /* ----------------------boxen med profilbilden----------------- */
@@ -117,22 +119,19 @@ hr {
     height: 600px;
 }
 
-/* ----------------------omsluter formuläret----------------- */
-
-.form-container {
-    width: 40%;
-    margin-left: 50px;
-    margin-top: 100px;
-}
-
 /* ----------------------Ikonerna till sociala medier och under skills----------------- */
 
-.fa-brands {
+.fa-brands, .fa-envelope {
     font-size: 6rem;
 }
 
 /* -----------Bildlänken till mitt repo i github -----------------*/
 
-.project-one {
-    max-height: 500px;
+.projects {
+    max-height: 600px;
+}
+
+.cv {
+    width: 350px;
+    height: 500px;
 }

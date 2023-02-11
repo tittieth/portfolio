@@ -5,6 +5,27 @@
     margin: 0;
 }
 
+.cls-1 {
+    fill: #f7c9c9;
+}
+                    
+.cls-2 {
+    fill: #ef9e1d;
+}
+                    
+.cls-3 {
+    fill: #9fe4ed;
+}
+                    
+.cls-4 {
+    fill: #306344;
+}
+                    
+.cls-5 {
+    fill: #2fa7ea;
+}
+                     
+
 body {
     overflow-x: hidden;
     background: #fcf7f7;
@@ -109,7 +130,7 @@ nav a {
 }
 
 nav a:hover {
-    color: $dark-pink;
+    color: $orange;
 }
 
 .nav-toggle:checked~nav {
@@ -140,21 +161,21 @@ nav a:hover {
 .picture-container img {
     border-radius: 9999px;
     overflow-x: hidden;
-    border: 8px dotted $dark-pink;
+    border: 8px dotted $orange;
     margin-bottom: 60px;
    
 }
 
 /* ----------------------Texten front delveloper...----------------- */
 .profession {
-    margin: 10px 60px 20px 70px;
+    margin: -20px 60px 20px 40px;
+    font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
 }
 
 /* ----------------------Style för alla h1----------------- */
-h1 {
-    margin: 50px 0 20px 50px;
-    font-size: clamp(3rem, 2.33rem + 3.33vw, 7rem);
-    font-family: 'Noto Nastaliq Urdu', serif;
+.header {
+    margin: 50px 0 10px 20px;
+    padding: 20px;
 }
 
 /* ----------------------Style för alla p-taggar----------------- */
@@ -166,8 +187,9 @@ p {
 
 /* ----------------------style för alla h2----------------- */
 h2 {
-    margin: 60px 60px 20px 60px;
+    margin: 60px auto 0;
     color: $dark-grey;
+    font-style: italic;
     font-size: clamp(1.5rem, 0.9rem + 2.9vw, 5rem);
 }
 
@@ -238,11 +260,16 @@ hr {
 
 /* ----------------------boxen med erfarenhet----------------- */
 .experience-container {
-    background-color: $pink;
+    background-color: $base;
     min-height: 50vh;
     padding: 30px;
     border-radius: 10%;
 
+}
+
+.cv {
+    width: 200px;
+    height: 300px;
 }
 
 /* ------------Omsluter allt i skills -------------*/
@@ -264,7 +291,7 @@ hr {
 }
 
 /* ----------------------styling för ikonerna----------------- */
-.fa-brands {
+.fa-brands, .fa-envelope {
     color: $dark-grey;
     font-size: 3rem;
 }
@@ -298,7 +325,7 @@ hr {
 
 .box-three {
     grid-area: 2 / 1 / 3/ 2;
-    background-color: $pink;
+    background-color: $base;
 }
 
 
@@ -309,7 +336,7 @@ hr {
 
 .box-five {
     grid-area: 3/ 1 / 4 / 2;
-    background-color: $pink;
+    background-color: $base;
 }
 
 .box-six {
@@ -320,66 +347,9 @@ hr {
 /* ----------------------gridlayout slut----------------- */
 
 /* -----------Bildlänken till mitt repo i github -----------------*/
-.project-one {
+.projects {
     width: 100%;
     height: 100%;
-}
-
-/* --------Styling för type="text", select elements och textareas i formuläret ----------*/
-input[type=text],
-input[type=email],
-select,
-textarea {
-    width: 100%;
-    /* Full width */
-    padding: 12px;
-    /* Some padding */
-    border: 1px solid $dark-grey;
-    /* Gray border */
-    border-radius: 4px;
-    /* Rounded borders */
-    margin-top: 6px;
-    /* Add a top margin */
-    margin-bottom: 16px;
-    /* Bottom margin */
-    resize: vertical
-        /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* ------Styling för knappen send----------- */
-.btn {
-    position: relative;
-    background-color: $dark-grey;
-    color: #f5f3eb;
-    padding: 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-
-}
-
-/* styling för när man för musen över knappen send */
-.btn:hover {
-    background-color: $base;
-    color: $dark-grey;
-}
-
-/* Behållare för formuläret*/
-.form-container {
-    width: 90%;
-    margin: 80px auto 90px auto;
-    text-align: left;
-    color: $dark-grey;
-    border-radius: 5px;
-    border: 1px solid black;
-    padding: 20px
-}
-
-/* ----------------------styling för p-taggen i formuläret----------------- */
-.form-container p {
-    font-family: "tangerine", Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 30px;
-    text-align: center;
 }
 
 /* ----------------------Omlsuter ikonerna för sociala-medier ----------------- */
@@ -387,17 +357,17 @@ textarea {
 .socialmedia-container {
     display: grid;
     grid-auto-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 15px 15px;
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 120px;
 }
 
 .stalk-me {
-    grid-area: 1 / 1 / 2 / 4;
+    grid-area: 1 / 1 / 2 / 5;
 }
 
 .linkedin {
@@ -411,6 +381,12 @@ textarea {
 .instagram {
     grid-area: 2 / 3 / 3 / 4;
 }
+
+.mejl {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+
 
 /* ----------------------sociala-medier slut----------------- */
 
@@ -429,7 +405,7 @@ footer {
 }
 
 /* styling för hjärtat i footern */
-.fa-solid {
-    color: $dark-pink;
+.fa-heart {
+    color: $orange;
 
 }
